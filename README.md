@@ -1,15 +1,6 @@
-[![Build Status](https://img.shields.io/travis/smravi/docco-plus.svg?style=flat-square)](https://travis-ci.org/smravi/docco-plus)
-[![Code Climate](https://img.shields.io/codeclimate/github/smravi/docco-plus.svg?style=flat-square)](https://codeclimate.com/github/smravi/docco-plus)
-[![Coverage Status](http://img.shields.io/coveralls/smravi/docco-plus.svg?style=flat-square)](https://coveralls.io/r/smravi/docco-plus)
-[![Documentation](https://img.shields.io/badge/documentation-plus-green.svg?style=flat-square)](http://smravi.github.io/docco-plus/)
+# docco-plus-multiline
 
-[![Dependency Status](https://img.shields.io/david/smravi/docco-plus.svg?style=flat-square)](https://david-dm.org/smravi/docco-plus)
-[![devDependency Status](https://img.shields.io/david/dev/smravi/docco-plus.svg?style=flat-square)](https://david-dm.org/smravi/docco-plus#info=devDependencies)
-[![peerDependency Status](https://img.shields.io/david/peer/smravi/docco-plus.svg?style=flat-square)](https://david-dm.org/smravi/docco-plus#info=peerDependencies)
-
-
-# docco-plus
-
+> docco-plus-multiline is forked [docco-plus](https://github.com/smravi/docco-plus) with support multiline comments and comments on the same line as the code.
 > docco-plus is an extension to [docco](http://jashkenas.github.io/docco/) with support for multiple folders and same file name with different extensions.
 
 
@@ -17,11 +8,11 @@
 
 ### Installation and Setup
 
-Install docco-plus globally using the command
+Install docco-plus-multiline globally using the command
 
 ```shell
 
-sudo npm install -g docco-plus
+sudo npm install -g docco-plus-multiline
 
 ```
 
@@ -29,15 +20,44 @@ sudo npm install -g docco-plus
 
 ```shell
 
-docco-plus [options] FILES
+docco-plus-multiline [options] FILES
 
 ```
 
+
+### Usage example
+
+```shell
+
+docco-plus-multiline -o docs -h idea src/**
+
+```
 `FILES` can be a list of files or a glob pattern. **When passing glob pattern make sure that they are enclosed by quotes.**
+
+### Languages file example
+
+```shell
+
+{
+...
+
+".js": {
+        "name": "javascript",
+        "inlineComment": "//",
+        "multiLineCommentStart": "/*",
+        "multiLineCommentEnd": "*/",
+        "removeMultiLineSpecial": [" * ", "*\r", "*\n"]
+    }
+
+...
+}
+
+```
+Use the header `language` file to support the multiline comment in languages ​​other than `js`, `html`, `css` and `scss`
 
 #### Options:
 
-Options available for docco-plus are listed below, These options do the same thing as docco options. In fact, they are
+Options available for docco-plus-multiline are listed below, These options do the same thing as docco options. In fact, they are
 passed as-is to the docco processor. Refer the Docco documentation on more details about these options.
 
  - `-h` or `--help` output usage information

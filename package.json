@@ -1,26 +1,16 @@
 {
-    "name": "docco-plus",
-    "description": "Extending docco to work on multi-folder structures",
-    "homepage": "http://smravi.github.io/docco-plus/",
+    "name": "docco-plus-multiline",
+    "description": "Extending docco to work on multi-folder structures and multiline comments",
+    "homepage": "https://github.com/shcerbin/docco-plus-multiline",
     "main": "./lib/document",
-    "version": "2.0.0",
+    "version": "3.0.2",
     "scripts": {
         "test": "grunt jshint"
     },
     "bin": {
-        "docco-plus": "./bin/docco-plus"
+        "docco-plus-multiline": "./bin/docco-plus"
     },
-    "author": "Ravi Sruthi <sruthiin92@gmail.com> (https://github.com/smravi)",
-    "contributors": [
-        {
-            "name": "sruthiravi",
-            "email": "sruthiin92@gmail.com"
-        },
-        {
-            "name": "jhapranav",
-            "email": "jha.pranav.s@gmail.com"
-        }
-    ],
+    "author": "Schcerbin Ruslan <shcerbinruslan@gmail.com> (https://github.com/shcerbin)",
     "licenses": [
         {
             "type": "MIT",
@@ -29,10 +19,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/smravi/docco-plus.git"
+        "url": "https://github.com/shcerbin/docco-plus-multiline.git"
     },
     "bugs": {
-        "url": "https://github.com/smravi/docco-plus/issues"
+        "url": "https://github.com/shcerbin/docco-plus-multiline/issues"
     },
     "dependencies": {
         "bluebird": "latest",

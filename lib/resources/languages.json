@@ -109,7 +109,15 @@
     },
     ".js": {
         "name": "javascript",
-        "inlineComment": "//"
+        "inlineComment": "//",
+        "multiLineCommentStart": "/*",
+        "multiLineCommentEnd": "*/",
+        "removeMultiLineSpecial": [" * ", "*\r", "*\n"]
+    },
+    ".html": {
+        "name": "html",
+        "multiLineCommentStart": "<!--",
+        "multiLineCommentEnd": "-->"
     },
     ".jsm": {
         "name": "javascript",
@@ -224,9 +232,19 @@
         "name": "applescript",
         "inlineComment": "--"
     },
+    ".css": {
+        "name": "css",
+        "inlineComment": "//",
+        "multiLineCommentStart": "/*",
+        "multiLineCommentEnd": "*/",
+        "removeMultiLineSpecial": [" * ", "*\r", "*\n"]
+    },
     ".scss": {
         "name": "scss",
-        "inlineComment": "//"
+        "inlineComment": "//",
+        "multiLineCommentStart": "/*",
+        "multiLineCommentEnd": "*/",
+        "removeMultiLineSpecial": [" * ", "*\r", "*\n"]
     },
     ".sh": {
         "name": "bash",
