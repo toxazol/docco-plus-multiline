@@ -45,7 +45,7 @@
     },
     ".coffee": {
         "name": "coffeescript",
-        "inlineComment": "#"
+        "inlineComment": "#!"
     },
     ".cpp": {
         "name": "cpp",
@@ -53,8 +53,8 @@
     },
     ".cc": {
         "name": "cc",
-        "inlineComment": "//",
-	    "multiLineCommentStart": "/*",
+        "inlineComment": "//!",
+	    "multiLineCommentStart": "/*!",
         "multiLineCommentEnd": "*/",
         "removeMultiLineSpecial": [" * ", "*\r", "*\n"]
     },
@@ -95,8 +95,8 @@
         "inlineComment": "//"
     },
     ".h": {
-        "name": "objectivec",
-        "inlineComment": "//"
+        "name": "header",
+        "inlineComment": "//!"
     },
     ".hrl": {
         "name": "erlang",
@@ -116,19 +116,19 @@
     },
     ".js": {
         "name": "javascript",
-        "inlineComment": "//",
-        "multiLineCommentStart": "/*",
+        "inlineComment": "//!",
+        "multiLineCommentStart": "/*!",
         "multiLineCommentEnd": "*/",
         "removeMultiLineSpecial": [" * ", "*\r", "*\n"]
     },
     ".html": {
         "name": "html",
-        "multiLineCommentStart": "<!--",
+        "multiLineCommentStart": "<!--!",
         "multiLineCommentEnd": "-->"
     },
     ".xsl": {
         "name": "xsl",
-        "multiLineCommentStart": "<!--",
+        "multiLineCommentStart": "<!--!",
         "multiLineCommentEnd": "-->"
     },
     ".jsm": {
@@ -206,11 +206,11 @@
     },
     ".php": {
         "name": "php",
-        "inlineComment": "//"
+        "inlineComment": "//!"
     },
     ".pl": {
         "name": "perl",
-        "inlineComment": "#"
+        "inlineComment": "##"
     },
     ".pm": {
         "name": "perl",
@@ -253,18 +253,18 @@
     },
     ".scss": {
         "name": "scss",
-        "inlineComment": "//",
-        "multiLineCommentStart": "/*",
+        "inlineComment": "//!",
+        "multiLineCommentStart": "/*!",
         "multiLineCommentEnd": "*/",
         "removeMultiLineSpecial": [" * ", "*\r", "*\n"]
     },
     ".sh": {
         "name": "bash",
-        "inlineComment": "#"
+        "inlineComment": "##"
     },
     ".sql": {
         "name": "sql",
-        "inlineComment": "--"
+        "inlineComment": "--!"
     },
     ".sty": {
         "name": "tex",
