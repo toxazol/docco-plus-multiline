@@ -51,6 +51,13 @@
         "name": "cpp",
         "inlineComment": "//"
     },
+    ".cc": {
+        "name": "cc",
+        "inlineComment": "//",
+	    "multiLineCommentStart": "/*",
+        "multiLineCommentEnd": "*/",
+        "removeMultiLineSpecial": [" * ", "*\r", "*\n"]
+    },
     ".cs": {
         "name": "cs",
         "inlineComment": "//"
@@ -116,6 +123,11 @@
     },
     ".html": {
         "name": "html",
+        "multiLineCommentStart": "<!--",
+        "multiLineCommentEnd": "-->"
+    },
+    ".xsl": {
+        "name": "xsl",
         "multiLineCommentStart": "<!--",
         "multiLineCommentEnd": "-->"
     },
