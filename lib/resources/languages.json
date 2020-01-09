@@ -52,7 +52,7 @@
         "inlineComment": "//"
     },
     ".cc": {
-        "name": "cc",
+        "name": "c++",
         "inlineComment": "//!",
 	    "multiLineCommentStart": "/*!",
         "multiLineCommentEnd": "*/",
@@ -95,7 +95,7 @@
         "inlineComment": "//"
     },
     ".h": {
-        "name": "header",
+        "name": "c++",
         "inlineComment": "//!"
     },
     ".hrl": {
