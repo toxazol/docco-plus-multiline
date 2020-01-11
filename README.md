@@ -3,36 +3,20 @@
 > docco-plus-multiline is forked [docco-plus](https://github.com/smravi/docco-plus) with support multiline comments and comments on the same line as the code.
 > docco-plus is an extension to [docco](http://jashkenas.github.io/docco/) with support for multiple folders and same file name with different extensions.
 
-
 ## How to use
 
-### Installation and Setup
+### Installation and setup
 
-Install docco-plus-multiline globally using the command
-
-```shell
-
-sudo npm install -g docco-plus-multiline
-
-```
+[Install Node.js](https://nodejs.org/en/)
 
 ### Usage
 
+From doulike-docco folder run:
 ```shell
 
-docco-plus-multiline [options] FILES
+./docco-plus-multiline/bin/docco-plus "/path/to/dir/**"
 
 ```
-
-
-### Usage example
-
-```shell
-
-docco-plus-multiline -o docs -h idea src/**
-
-```
-`FILES` can be a list of files or a glob pattern. **When passing glob pattern make sure that they are enclosed by quotes.**
 
 ### Languages file example
 
@@ -77,16 +61,6 @@ passed as-is to the docco processor. Refer the Docco documentation on more detai
  - `-m [file]` or `--marked [file]` use custom marked options
 
  - `-i [file]` or `--index [file]` the file to be documented as the landing file for the documentation
-
-
-## How to use
-
-### Installation and setup
-
-+ Linux installation:
-    1. Install node.js and npm
-    2. From doulike-docco folder run:
-    `./docco-plus-multiline/bin/docco-plus "path/to/doulike-devel/**" -i ./readme.md`
 
 + Inline comments:
     - cc //!
