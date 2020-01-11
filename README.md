@@ -77,3 +77,26 @@ passed as-is to the docco processor. Refer the Docco documentation on more detai
  - `-m [file]` or `--marked [file]` use custom marked options
 
  - `-i [file]` or `--index [file]` the file to be documented as the landing file for the documentation
+
+
+## How to use
+
+### Installation and setup
+
++ Linux installation:
+    1. Install node.js and npm
+    2. From doulike-docco folder run:
+    `./docco-plus-multiline/bin/docco-plus "path/to/doulike-devel/**" -i ./readme.md`
+
++ Inline comments:
+    - cc //!
+    - h //!
+    - js //!
+    - xsl <!--!
+    - html <!--!
+    - scss //!
+    - sh ##
+    - pl ##
+    - sql --!
+    - php //!
+    - coffee ##
